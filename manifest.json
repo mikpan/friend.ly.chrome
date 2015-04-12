@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+
+  "name": "Friend.ly service",
+  "description": "How do you and your friend circle spend time on the Internet",
+  "author": "mpansh",
+  "version": "1.1.1",
+  
+  "permissions": [
+    "background",
+	"history",
+    "alarms",
+	"http://*/*",
+	"https://*/*",
+    "tabs",
+    "idle",
+    "notifications",
+    "webNavigation"
+  ],
+
+  "icons":{"64":"img/logo_64.png", "32":"img/favicon.png", "128":"img/logo.png"},
+
+    "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "default_locale" : "en",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
